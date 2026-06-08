@@ -233,16 +233,14 @@ class MenuController extends Controller
 
     private function formatMenu($menu)
     {
-        $image = $menu->image ? Storage::url($menu->image) : null;
-        $image_cropped = $menu->image_cropped ? Storage::url($menu->image_cropped) : null;
         return [
             'id' => $menu->id,
             'name' => $menu->name,
             'price' => $menu->price,
             'description' => $menu->description,
             'category' => $menu->category,
-            'image' => $image,
-            'image_cropped' => $image_cropped ?: $image,
+            'image' => $menu->image,
+            'image_cropped' => $menu->image_cropped ?: $menu->image,
             'status' => $menu->status,
             'created_at' => $menu->created_at,
             'updated_at' => $menu->updated_at,

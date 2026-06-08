@@ -1,7 +1,7 @@
 // Utility to build storage URLs that respect REACT_APP_API_URL or the current origin
 export function storageBase() {
     const api = process.env.REACT_APP_API_URL;
-    if (api) return api.replace(/\/api\/?$/, "");
+    if (api) return api.replace(/\/api\/v1\/?$/, "").replace(/\/api\/?$/, "");
     if (
         typeof window !== "undefined" &&
         window.location &&

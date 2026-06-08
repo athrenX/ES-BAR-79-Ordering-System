@@ -124,6 +124,8 @@ Route::prefix('v1')->group(function () {
         Route::get('/admin/menus', [MenuController::class, 'index']);
         Route::post('/admin/menus', [MenuController::class, 'store']);
         Route::post('/admin/menus/{id}', [MenuController::class, 'update']);
+        Route::put('/admin/menus/{id}', [MenuController::class, 'update']); // Mengizinkan PUT
+        Route::patch('/admin/menus/{id}', [MenuController::class, 'update']); // Mengizinkan PATCH
         Route::delete('/admin/menus/{id}', [MenuController::class, 'destroy']);
         Route::post('/admin/menus/{id}/crop', [MenuController::class, 'crop']);
         

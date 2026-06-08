@@ -1,4 +1,4 @@
-
+# 🍦 ES BAR 79 — QR Code Ordering System
 
 <div align="center">
 
@@ -7,67 +7,67 @@
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-**Sistem pemesanan digital untuk kedai es krim & kopi berbasis QR Code**
+**A digital self-ordering system for ice cream & coffee shops powered by QR Codes**
 
 </div>
 
 ---
 
-## 🚀 Live Demo & Akses Cepat
+## 🚀 Live Demo & Quick Access
 
-Kamu bisa mencoba langsung aplikasi yang sudah ter-deploy secara online di sini:
+You can try the fully deployed application online:
 
-* **🔗 Link Demo Aplikasi (Frontend):** **[https://esbar-ordering-system.vercel.app](https://esbar-ordering-system.vercel.app)**
-* **🔗 Link API (Backend):** **[https://laravel-backend-production-530f.up.railway.app](https://laravel-backend-production-530f.up.railway.app)**
+* **🔗 Frontend Demo Web App:** **[https://esbar-ordering-system.vercel.app](https://esbar-ordering-system.vercel.app)**
+* **🔗 Backend API Service:** **[https://laravel-backend-production-530f.up.railway.app](https://laravel-backend-production-530f.up.railway.app)**
 
-### 🔑 Kredensial Demo Admin
-Untuk mencoba fitur admin panel (kelola meja, ubah menu, approve cash, pantau pesanan):
-* **Halaman Login Admin:** **[https://esbar-ordering-system.vercel.app/admin](https://esbar-ordering-system.vercel.app/admin)**
+### 🔑 Demo Admin Credentials
+To access the admin dashboard features (manage tables, edit menus, approve cash payments, monitor live orders):
+* **Admin Login Page:** **[https://esbar-ordering-system.vercel.app/admin](https://esbar-ordering-system.vercel.app/admin)**
 * **Username:** `demo_admin`
 * **Password:** `demo123`
 
-*(Catatan: Aplikasi berjalan dalam Sandbox mode. Kamu dapat mencoba melakukan pembayaran Midtrans QRIS/Gopay secara simulasi menggunakan uang mainan).*
+*(Note: The application is currently running in Sandbox mode. You can simulate Midtrans QRIS/GoPay payments using sandbox test credentials).*
 
 ---
 
-## 📋 Deskripsi
+## 📋 Project Description
 
-ES BAR 79 Ordering System adalah aplikasi pemesanan restoran berbasis web yang memungkinkan:
-- 👥 **Customer** scan QR Code di meja → lihat menu → pesan → bayar
-- 👨‍💼 **Admin** kelola menu, pantau pesanan real-time, lihat laporan revenue
+ES BAR 79 Ordering System is a web-based self-ordering application designed for restaurants and cafes:
+- 👥 **Customers** scan a QR Code at their table → browse menu items → place orders → make payments.
+- 👨‍💼 **Admins** manage menu listings, monitor incoming orders in real-time, and view revenue analytics.
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-| Fitur | Status |
+| Feature | Status |
 |-------|--------|
 | 🔐 Admin Authentication (Sanctum) | ✅ |
-| 📱 QR Code per Meja (scan & auto-detect) | ✅ |
-| 🍽️ Manajemen Menu (CRUD + Upload Gambar) | ✅ |
-| 🛒 Keranjang Belanja (per meja, session-based) | ✅ |
-| 📦 Order Management + Tracking Code | ✅ |
-| 💳 Payment Gateway (QRIS, GoPay, BCA VA, Cash) | ✅ |
-| 📊 Admin Dashboard & Laporan Revenue | ✅ |
-| 🔔 Real-time Notifications (Pusher) | ✅ |
-| 📷 In-browser QR Scanner | ✅ |
+| 📱 Table QR Code Generation & Auto-Detection | ✅ |
+| 🍽️ Menu Management (CRUD + Image Upload & Crop) | ✅ |
+| 🛒 Shopping Cart (Isolated per table, session-based) | ✅ |
+| 📦 Order Management + Tracking Code System | ✅ |
+| 💳 Integrated Payment Gateway (QRIS, GoPay, Bank Transfer, Cash) | ✅ |
+| 📊 Admin Dashboard & Revenue Analytics | ✅ |
+| 🔔 Real-time Socket Notifications (Pusher) | ✅ |
+| 📷 Built-in In-Browser QR Scanner | ✅ |
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 ### Backend
 - **Framework**: Laravel 12 (PHP 8.2+)
 - **Database**: MySQL 8.0
-- **Auth**: Laravel Sanctum (Token-based)
-- **Payment**: Midtrans SDK (QRIS, GoPay, BCA VA)
-- **Real-time**: Pusher
+- **Auth**: Laravel Sanctum (Token-based authentication)
+- **Payment Gateway**: Midtrans SDK (QRIS, GoPay, Bank Transfer)
+- **Real-time Engine**: Pusher WebSocket
 
 ### Frontend
 - **Framework**: React 18 (Create React App)
 - **HTTP Client**: Axios
-- **Real-time**: Laravel Echo + Pusher JS
+- **Real-time Client**: Laravel Echo + Pusher JS
 - **QR Scanner**: html5-qrcode
 
 ---
 
-## 🚀 Setup & Instalasi
+## 🚀 Setup & Local Installation
 
 ### Prerequisites
 - PHP 8.2+
@@ -76,26 +76,26 @@ ES BAR 79 Ordering System adalah aplikasi pemesanan restoran berbasis web yang m
 - Node.js 18+
 - NPM
 
-### 1. Clone Repository
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/laravel_esbar.git
-cd laravel_esbar
+git clone https://github.com/athrenX/ES-BAR-79-Ordering-System.git
+cd ES-BAR-79-Ordering-System
 ```
 
 ### 2. Setup Backend (Laravel)
 
 ```bash
-# Install dependencies
+# Install PHP dependencies
 composer install
 
-# Copy environment file
+# Create environment configuration file
 cp .env.example .env
 
-# Generate app key
+# Generate application key
 php artisan key:generate
 ```
 
-Edit `.env` dan isi konfigurasi database dan Midtrans:
+Configure your `.env` file with your database and Midtrans credentials:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -112,16 +112,16 @@ FRONTEND_URL=http://localhost:3001
 ```
 
 ```bash
-# Buat database
+# Create database
 mysql -u root -p -e "CREATE DATABASE laravel_esbar CHARACTER SET utf8mb4"
 
-# Jalankan migrasi + seeder
+# Run database migrations and seed default data
 php artisan migrate --seed
 
-# Buat storage link
+# Create storage symlink
 php artisan storage:link
 
-# Jalankan server
+# Start the local development server
 php artisan serve
 ```
 
@@ -130,23 +130,19 @@ php artisan serve
 ```bash
 cd frontend
 
-# Install dependencies
+# Install Node dependencies
 npm install
 
-# Copy environment file
+# Create environment configuration file
 cp .env.example .env
 
-# Edit .env
-# REACT_APP_API_URL=http://127.0.0.1:8000/api/v1
-# REACT_APP_PUSHER_KEY=your-pusher-key
-
-# Jalankan dev server
+# Start the React development server
 npm start
 ```
 
-Frontend akan berjalan di: **http://localhost:3001**
+The React frontend will be accessible at: **http://localhost:3001**
 
-## 🔑 Akun Default (Setelah Seeder)
+## 🔑 Default Accounts (After Seeding)
 
 | Role | Username | Password |
 |------|----------|----------|
@@ -154,28 +150,28 @@ Frontend akan berjalan di: **http://localhost:3001**
 | Admin | `admin` | `admin123` |
 | Admin 2 | `esbar_admin` | `esbar2024` |
 
-**Data awal:**
-- 20 Meja (Meja 1 - Meja 20)
-- 15 Menu (5 Makanan, 5 Minuman, 5 Es Krim)
+**Seeded Data:**
+- 20 Tables (Table 1 - Table 20)
+- 15 Menu items (5 Food, 5 Drinks, 5 Ice Creams with Unsplash images)
 
 ---
 
 ## 📸 Screenshots
 
-Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
+Here are some interface previews of **ES BAR 79 Ordering System**:
 
 ### 1. Customer Flow
-* **Customer Ordering (Katalog Menu)**
+* **Customer Ordering (Menu Catalog)**
   <img width="395" height="844" alt="gambar" src="https://github.com/user-attachments/assets/6aab6afc-9c8d-4a8e-87fb-a5538d498f7f" />
   
   <img width="403" height="858" alt="gambar" src="https://github.com/user-attachments/assets/28af6272-0f26-41a6-b423-06cde8db4fde" />
 
-* **QR Scan Meja**
+* **QR Code Table Scanner**
  
   <img width="1813" height="899" alt="gambar" src="https://github.com/user-attachments/assets/03ec793c-eb5f-486e-90a5-dfaa70359456" />
 
   
-* **Checkout & Metode Pembayaran**
+* **Checkout & Payment Method Selection**
  
   <img width="456" height="855" alt="gambar" src="https://github.com/user-attachments/assets/a099a043-5b18-45ee-82f9-6bb117bda738" />
 
@@ -186,11 +182,11 @@ Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
 
 
 ### 2. Admin Flow
-* **Admin Dashboard (Monitor Live Order)**
+* **Admin Dashboard (Live Order Monitoring)**
 
   <img width="1812" height="899" alt="gambar" src="https://github.com/user-attachments/assets/30918ef3-abd4-483f-a332-e339ce7781fc" />
 
-* **Revenue Dashboard (Statistik Pendapatan)**
+* **Revenue Dashboard & Analytics**
 
   <img width="1822" height="892" alt="gambar" src="https://github.com/user-attachments/assets/e4538a75-c80c-4ccb-a66a-b5734675fc5a" />
 
@@ -200,63 +196,63 @@ Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
 
 ## 📡 API Endpoints
 
-Base URL: `http://localhost:8000/api/v1`
+Base URL: `https://laravel-backend-production-530f.up.railway.app/api/v1`
 
 ### Public (Customer)
-| Method | Endpoint | Deskripsi |
+| Method | Endpoint | Description |
 |--------|----------|-----------|
-| POST | `/table/set` | Set session meja |
-| GET | `/menus` | List menu (dengan filter kategori) |
-| POST | `/cart` | Tambah ke keranjang |
-| POST | `/orders` | Checkout |
-| POST | `/orders/{id}/payment` | Buat pembayaran |
+| POST | `/table/set` | Create session/table connection |
+| GET | `/menus` | List menus (supports category filtering) |
+| POST | `/cart` | Add item to cart |
+| POST | `/orders` | Place order / Checkout |
+| POST | `/orders/{id}/payment` | Initialize transaction |
 
 ### Admin (Requires Bearer Token)
-| Method | Endpoint | Deskripsi |
+| Method | Endpoint | Description |
 |--------|----------|-----------|
-| POST | `/admin/login` | Login admin |
-| GET | `/admin/orders` | List semua order |
-| PUT | `/admin/orders/{id}/status` | Update status order |
-| GET | `/admin/tables/{id}/qr` | Download QR Code meja |
-| GET | `/admin/dashboard/statistics` | Statistik dashboard |
+| POST | `/admin/login` | Administrator login |
+| GET | `/admin/orders` | Retrieve all orders |
+| PUT | `/admin/orders/{id}/status` | Update order status |
+| GET | `/admin/tables/{id}/qr` | Download table QR Code |
+| GET | `/admin/dashboard/statistics` | Retrieve dashboard statistics |
 
 ---
 
-## 📱 Cara Kerja (Customer Flow)
+## 📱 User Workflow (Customer Flow)
 
 ```
-1. Scan QR Code di meja
+1. Scan QR Code on the table
        ↓
-2. Buka halaman → input nama
+2. Landing page opens → enter name
        ↓
-3. Browse menu & tambah ke cart
+3. Browse catalog & add items to cart
        ↓
-4. Checkout → pilih metode bayar
+4. Checkout → select payment method
        ↓
-5. Bayar via QRIS / GoPay / BCA VA / Cash
+5. Pay via QRIS / GoPay / Bank Transfer / Cash
        ↓
-6. Tracking order dengan kode ESB-XXXXX
+6. Track order preparation status (Code: ESB-XXXXX)
 ```
 
-## 👨‍💼 Admin Flow
+## 👨‍💼 Administrator Workflow
 
 ```
-1. Login ke /admin
+1. Login to /admin panel
        ↓
-2. Dashboard — lihat order masuk real-time
+2. Monitor incoming orders in real-time
        ↓
-3. Update status: Menunggu → Disiapkan → Selesai
+3. Update status: Pending → Preparing → Completed
        ↓
-4. Kelola Menu & Meja
+4. Manage menu catalogs & table lists
        ↓
-5. Download / Print QR Code meja
+5. Generate / print table QR codes
        ↓
-6. Lihat laporan revenue
+6. View revenue statistics
 ```
 
 ---
 
-## 🏗️ Struktur Project
+## 🏗️ Project Structure
 
 ```
 laravel_esbar/
@@ -281,16 +277,16 @@ laravel_esbar/
 │   └── seeders/
 ├── routes/
 │   └── api.php
-├── frontend/                   # React App
+├── frontend/                   # React Frontend App
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Login.js        # Customer login + QR scanner
-│   │   │   ├── Catalog.js      # Halaman menu
-│   │   │   ├── Cart.js         # Keranjang
-│   │   │   ├── PaymentPage.js  # Pembayaran
-│   │   │   └── admin/          # Admin panel
+│   │   │   ├── Login.js        # Table checkin + camera QR scanner
+│   │   │   ├── Catalog.js      # Menu browser
+│   │   │   ├── Cart.js         # Order cart
+│   │   │   ├── PaymentPage.js  # Payment checkout integration
+│   │   │   └── admin/          # Backoffice admin panel
 │   │   └── api/
-│   │       └── config.js       # Axios config
+│   │       └── config.js       # Axios client setup
 │   └── package.json
 ├── .env.example
 └── README.md
@@ -298,23 +294,23 @@ laravel_esbar/
 
 ---
 
-## 🚀 Deploy ke Production
+## 🚀 Production Deployment
 
-### Backend (Shared Hosting / VPS)
-1. Upload semua file kecuali `vendor/` dan `node_modules/`
-2. Jalankan `composer install --no-dev --optimize-autoloader`
-3. Set `.env`: `APP_ENV=production`, `APP_DEBUG=false`
-4. Set Midtrans production keys: `MIDTRANS_IS_PRODUCTION=true`
-5. Jalankan `php artisan migrate --force`
-6. Jalankan `php artisan config:cache && php artisan route:cache`
+### Backend (Shared Hosting / VPS / Cloud PaaS)
+1. Upload all directories excluding `vendor/` and `node_modules/`
+2. Execute: `composer install --no-dev --optimize-autoloader`
+3. Configure `.env`: `APP_ENV=production`, `APP_DEBUG=false`
+4. Set Midtrans Production keys: `MIDTRANS_IS_PRODUCTION=true`
+5. Execute database migrations: `php artisan migrate --force`
+6. Optimize routing and configurations: `php artisan config:cache && php artisan route:cache`
 
 ### Frontend
 ```bash
-# Build untuk production
+# Compile for production
 cd frontend
 npm run build
 ```
-Upload folder `frontend/build/` ke hosting.
+Deploy the compiled `frontend/build/` directory.
 
 ---
 

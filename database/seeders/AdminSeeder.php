@@ -21,5 +21,10 @@ class AdminSeeder extends Seeder
             ['username' => 'esbar_admin'],
             ['password_hash' => Admin::hashPassword('esbar2024')]
         );
+
+        Admin::updateOrCreate(
+            ['username' => 'demo_admin'],
+            ['password_hash' => Admin::hashPassword('demo123')]
+        );
     }
 }

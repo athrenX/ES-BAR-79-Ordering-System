@@ -1,4 +1,4 @@
-<img width="395" height="844" alt="gambar" src="https://github.com/user-attachments/assets/e8032822-8121-4baf-97a1-9d91c533925c" /># 🍦 ES BAR 79 — Ordering System
+
 
 <div align="center">
 
@@ -166,20 +166,40 @@ Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
 
 ### 1. Customer Flow
 * **Customer Ordering (Katalog Menu)**
+  <img width="395" height="844" alt="gambar" src="https://github.com/user-attachments/assets/6aab6afc-9c8d-4a8e-87fb-a5538d498f7f" />
+  <img width="403" height="858" alt="gambar" src="https://github.com/user-attachments/assets/28af6272-0f26-41a6-b423-06cde8db4fde" />
+
+
  
 
 * **QR Scan Meja**
-  ![QR Scan](screenshots/qr_scan.png)
+ 
+  <img width="1813" height="899" alt="gambar" src="https://github.com/user-attachments/assets/03ec793c-eb5f-486e-90a5-dfaa70359456" />
+
   
 * **Checkout & Metode Pembayaran**
-  ![Checkout](screenshots/checkout.png)
+ 
+  <img width="456" height="855" alt="gambar" src="https://github.com/user-attachments/assets/a099a043-5b18-45ee-82f9-6bb117bda738" />
+
+<img width="337" height="656" alt="gambar" src="https://github.com/user-attachments/assets/80fc78d7-9d9a-45d5-9e3b-1a78a1214773" />
+
+<img width="423" height="873" alt="gambar" src="https://github.com/user-attachments/assets/00e78d97-68a1-42a3-8021-400d83682992" />
+
+
 
 ### 2. Admin Flow
 * **Admin Dashboard (Monitor Live Order)**
   ![Admin Dashboard](screenshots/admin_dashboard.png)
+  <img width="1812" height="899" alt="gambar" src="https://github.com/user-attachments/assets/30918ef3-abd4-483f-a332-e339ce7781fc" />
+
   
 * **Revenue Dashboard (Statistik Pendapatan)**
-  ![Revenue Dashboard](screenshots/revenue_dashboard.png)
+
+  <img width="1822" height="892" alt="gambar" src="https://github.com/user-attachments/assets/e4538a75-c80c-4ccb-a66a-b5734675fc5a" />
+
+  <img width="625" height="787" alt="gambar" src="https://github.com/user-attachments/assets/8a3dd4cf-eafd-46cd-ac4c-787333cd35b6" />
+
+
 
 ## 📡 API Endpoints
 

@@ -29,6 +29,8 @@ return [
         'http://192.168.1.13:3000',
         'http://172.17.192.1:3000',
         'http://172.17.192.1:3001',
+        env('FRONTEND_URL'), // Agar membaca domain Vercel yang kita pasang di Railway
+        'https://esbar-ordering-system.vercel.app', // Fallback domain Vercel utama
     ],
 
     'allowed_origins_patterns' => [],

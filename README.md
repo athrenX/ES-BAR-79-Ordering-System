@@ -13,6 +13,23 @@
 
 ---
 
+## 🚀 Live Demo & Akses Cepat
+
+Kamu bisa mencoba langsung aplikasi yang sudah ter-deploy secara online di sini:
+
+* **🔗 Link Demo Aplikasi (Frontend):** **[https://esbar-ordering-system.vercel.app](https://esbar-ordering-system.vercel.app)**
+* **🔗 Link API (Backend):** **[https://laravel-backend-production-530f.up.railway.app](https://laravel-backend-production-530f.up.railway.app)**
+
+### 🔑 Kredensial Demo Admin
+Untuk mencoba fitur admin panel (kelola meja, ubah menu, approve cash, pantau pesanan):
+* **Halaman Login Admin:** **[https://esbar-ordering-system.vercel.app/admin](https://esbar-ordering-system.vercel.app/admin)**
+* **Username:** `admin`
+* **Password:** `admin123`
+
+*(Catatan: Aplikasi berjalan dalam Sandbox mode. Kamu dapat mencoba melakukan pembayaran Midtrans QRIS/Gopay secara simulasi menggunakan uang mainan).*
+
+---
+
 ## 📋 Deskripsi
 
 ES BAR 79 Ordering System adalah aplikasi pemesanan restoran berbasis web yang memungkinkan:

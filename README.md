@@ -1,4 +1,4 @@
-# 🍦 ES BAR 79 — Ordering System
+<img width="395" height="844" alt="gambar" src="https://github.com/user-attachments/assets/e8032822-8121-4baf-97a1-9d91c533925c" /># 🍦 ES BAR 79 — Ordering System
 
 <div align="center">
 
@@ -166,8 +166,8 @@ Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
 
 ### 1. Customer Flow
 * **Customer Ordering (Katalog Menu)**
-  ![Customer Ordering](screenshots/customer_ordering.png)
-  
+  <img width="395" height="844" alt="gambar" src="https://github.com/user-attachments/assets/1615c788-c614-4780-a7b2-a0751cabd389" />
+
 * **QR Scan Meja**
   ![QR Scan](screenshots/qr_scan.png)
   

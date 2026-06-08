@@ -1,0 +1,82 @@
+# ==========================================
+# Laravel Backend
+# ==========================================
+
+# Environment files (JANGAN pernah commit!)
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+
+# Laravel generated
+/bootstrap/cache/*.php
+/public/storage
+/public/hot
+
+# Storage (logs, sessions, cache)
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/pail
+!storage/logs/.gitkeep
+!storage/framework/cache/.gitkeep
+!storage/framework/sessions/.gitkeep
+!storage/framework/testing/.gitkeep
+!storage/framework/views/.gitkeep
+
+# Node modules (Laravel Mix/Vite)
+/node_modules/
+/public/build/
+
+# PHPUnit cache
+.phpunit.result.cache
+/.phpunit.cache
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.phpactor.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+/auth.json
+Homestead.json
+Homestead.yaml
+
+# ==========================================
+# React Frontend (folder: frontend/)
+# ==========================================
+
+# Dependencies
+/frontend/node_modules/
+
+# Build output
+/frontend/build/
+
+# Frontend env files
+/frontend/.env
+/frontend/.env.*
+!/frontend/.env.example
+
+# ==========================================
+# Debug & temp files (jangan commit!)
+# ==========================================
+create-database.php
+debug-*.php
+clear-*.php
+test-*.php
+test-*.ps1
+test-*.html
+*.log
+keep-server-alive.ps1
+prepare-deployment.ps1
+prepare-deployment.sh
+health-check.ps1
+*.txt

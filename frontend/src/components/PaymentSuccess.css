@@ -1,0 +1,164 @@
+.pay-success {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pay-success .card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.pay-success .success-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pay-success .brand-logo-rect {
+  background: linear-gradient(135deg, #f9585b 0%, #dc3545 100%);
+  border-radius: 8px;
+  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(249, 88, 91, 0.3);
+}
+
+.pay-success .brand-name-main {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.pay-success .brand-subtitle {
+  font-size: 8px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.pay-success .success-icon {
+  width: 70px;
+  height: 70px;
+  background: #f9585b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.pay-success .success-icon svg {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.pay-success h1 {
+  font-size: 24px;
+  color: #1a1a2e;
+  margin: 0 0 25px 0;
+  font-weight: 700;
+}
+
+.pay-success .detail {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.pay-success .detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pay-success .detail-row:last-child {
+  border-bottom: none;
+}
+
+.pay-success .detail-row.total {
+  padding-top: 12px;
+  margin-top: 5px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: none;
+}
+
+.pay-success .detail-row span {
+  color: #666;
+  font-size: 13px;
+}
+
+.pay-success .detail-row strong {
+  color: #1a1a2e;
+  font-size: 14px;
+}
+
+.pay-success .detail-row.total strong {
+  color: #f9585b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pay-success .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pay-success .btn-primary {
+  width: 100%;
+  padding: 14px 24px;
+  background: #f9585b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pay-success .btn-primary:hover {
+  background: #e04548;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pay-success .card {
+    padding: 30px 20px;
+  }
+
+  .pay-success h1 {
+    font-size: 22px;
+  }
+
+  .pay-success .success-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pay-success .success-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}

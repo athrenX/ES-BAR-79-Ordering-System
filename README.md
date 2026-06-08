@@ -23,8 +23,8 @@ Kamu bisa mencoba langsung aplikasi yang sudah ter-deploy secara online di sini:
 ### 🔑 Kredensial Demo Admin
 Untuk mencoba fitur admin panel (kelola meja, ubah menu, approve cash, pantau pesanan):
 * **Halaman Login Admin:** **[https://esbar-ordering-system.vercel.app/admin](https://esbar-ordering-system.vercel.app/admin)**
-* **Username:** `admin`
-* **Password:** `admin123`
+* **Username:** `demo_admin`
+* **Password:** `demo123`
 
 *(Catatan: Aplikasi berjalan dalam Sandbox mode. Kamu dapat mencoba melakukan pembayaran Midtrans QRIS/Gopay secara simulasi menggunakan uang mainan).*
 
@@ -146,12 +146,11 @@ npm start
 
 Frontend akan berjalan di: **http://localhost:3001**
 
----
-
 ## 🔑 Akun Default (Setelah Seeder)
 
 | Role | Username | Password |
 |------|----------|----------|
+| Demo Admin | `demo_admin` | `demo123` |
 | Admin | `admin` | `admin123` |
 | Admin 2 | `esbar_admin` | `esbar2024` |
 
@@ -160,6 +159,27 @@ Frontend akan berjalan di: **http://localhost:3001**
 - 15 Menu (5 Makanan, 5 Minuman, 5 Es Krim)
 
 ---
+
+## 📸 Screenshots
+
+Berikut adalah beberapa tampilan antarmuka dari **ES BAR 79 Ordering System**:
+
+### 1. Customer Flow
+* **Customer Ordering (Katalog Menu)**
+  ![Customer Ordering](screenshots/customer_ordering.png)
+  
+* **QR Scan Meja**
+  ![QR Scan](screenshots/qr_scan.png)
+  
+* **Checkout & Metode Pembayaran**
+  ![Checkout](screenshots/checkout.png)
+
+### 2. Admin Flow
+* **Admin Dashboard (Monitor Live Order)**
+  ![Admin Dashboard](screenshots/admin_dashboard.png)
+  
+* **Revenue Dashboard (Statistik Pendapatan)**
+  ![Revenue Dashboard](screenshots/revenue_dashboard.png)
 
 ## 📡 API Endpoints
 
